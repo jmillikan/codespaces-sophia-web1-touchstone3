@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Mobile-first layout */
+
+nav ul {
+    display: flex; 
+    flex-direction: column;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+}
+
+h1, section, footer {
+    padding: 0.5rem 0.3rem;
+    border-bottom: solid 1px #d9556f;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+p, ul, figure {
+    padding: 0.5rem 0rem
+}
+
+img, video {
+    width: 100%
+}
+
+/* Desktop/large screen view */
+
+@media (min-width: 1024px) {
+    nav ul {
+        display: flex; flex-direction: row;
+    }
+
+    p, ul, figcaption {
+        max-width: 75ch
+    }
+
+    img, video {
+        max-width: 768px;
+    }
+}
+
+/* Look and feel */
+
+body {
+    font-family: 'Courier New', Courier, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav li {
+    font-family: Georgia, Times, sans-serif
+}
+
+.nav_logo { 
+    max-width: 100px; max-height: 100px 
+}
+
+nav ul li {
+    border: solid 1px #d9556f;
+    border-width: 0px 0px 1px 0px;
+    background-color: #d9c055;
+    color: black;
+    font-size: 2rem;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #556ed9;
+    color: white;
+}
